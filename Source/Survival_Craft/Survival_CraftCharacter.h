@@ -22,7 +22,7 @@ class ASurvival_CraftCharacter : public ACharacter
 	GENERATED_BODY()
 
 	/** Pawn mesh: 1st person view (arms; seen only by self) */
-	UPROPERTY(VisibleDefaultsOnly, Category=Mesh)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Mesh, meta = (AllowPrivateAccess = "True"))
 	USkeletalMeshComponent* Mesh1P;
 
 	/** First person camera */
